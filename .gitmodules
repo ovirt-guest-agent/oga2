@@ -1,0 +1,15 @@
+[submodule "third_party/tut"]
+	path = third_party/tut
+	url = git@github.com:vinzenz/tut
+[submodule "third_party/chromium/base"]
+	path = third_party/chromium/base
+	url = http://git.chromium.org/chromium/src/base.git
+[submodule "third_party/chromium/third_party/libevent"]
+	path = third_party/chromium/third_party/libevent
+	url = http://github.com/ovirt-guest-agent/chromium-third_party-libevent
+[submodule "third_party/chromium/third_party/icu"]
+	path = third_party/chromium/third_party/icu
+	url = http://github.com/ovirt-guest-agent/chromium-third_party-icu52
+[submodule "third_party/chromium/ipc"]
+	path = third_party/chromium/ipc
+	url = http://github.com/ovirt-guest-agent/chromium-src-ipc
