@@ -2,7 +2,7 @@ AC_INIT([ovirt-guest-agent],
         [2.0],
         [evilissimo@redhat.com],
         [ovirt-guest-agent],
-        [http://github.com/vinzenz/ovirt-guest-agent2])
+        [http://github.com/ovirt-guest-agent/oga2])
 AC_PREREQ([2.59])
 
 AM_INIT_AUTOMAKE([1.10 -Wall no-define subdir-objects])
@@ -37,7 +37,7 @@ AM_CONDITIONAL(OGA_OS_LINUX,   [test "$OGA_OS_LINUX" == "1" ])
 AM_CONDITIONAL(OGA_OS_POSIX,   [test "$OGA_OS_POSIX" == "1" ])
 AM_CONDITIONAL(OGA_OS_FREEBSD, [test "$OGA_OS_FREEBSD" == "1" ])
 
-OGA_CXX_INCLUDES="-I\$(top_srcdir)/src -I\$(top_srcdir)/third_party/chromium"
+OGA_CXX_INCLUDES="-I\$(top_srcdir)/src"
 OGA_CXX_FLAGS="-std=c++98 -W -Wall -pedantic \$(OGA_CXX_INCLUDES)"
 AC_SUBST([OGA_CXX_INCLUDES])
 AC_SUBST([OGA_CXX_FLAGS])
@@ -48,7 +48,5 @@ AC_CONFIG_FILES([
     src/oga/Makefile
     tests/Makefile
     third_party/Makefile
-    third_party/chromium/Makefile
-    third_party/chromium/third_party/icu/Makefile
 ])
 AC_OUTPUT
